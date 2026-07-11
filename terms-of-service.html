@@ -170,7 +170,11 @@
 
   .card-body li {
     margin-bottom: .65rem;
-    color: inherit;
+    color: var(--text-secondary);
+  }
+
+  .card-body li::marker {
+    color: var(--accent);
   }
 
   .card-body p:last-child { margin-bottom: 0; }
