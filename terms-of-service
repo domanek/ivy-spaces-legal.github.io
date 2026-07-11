@@ -1,0 +1,1012 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Terms of Service — Ivy Spaces</title>
+
+<style>
+  :root {
+    --bg:          #F3F7F4;
+    --surface:     #FFFFFF;
+    --surface-2:   #F8FBF9;
+    --border:      #DDE8E1;
+    --text:        #0F1F16;
+    --text-2:      #4A6358;
+    --text-3:      #7E9E90;
+    --green:       #2EAA6E;
+    --green-dark:  #12281E;
+    --green-mid:   #1B7A4E;
+    --green-tint:  #E6F5EE;
+    --amber:       #92400E;
+    --amber-bg:    #FFFBEB;
+    --amber-border:#FDE68A;
+    --radius-sm:   10px;
+    --radius-md:   16px;
+    --radius-lg:   22px;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg:         #0B1810;
+      --surface:    #152219;
+      --surface-2:  #1A2D20;
+      --border:     #243D2C;
+      --text:       #EAF2EC;
+      --text-2:     #8BB89C;
+      --text-3:     #567060;
+      --green:      #3DC47E;
+      --green-dark: #0A1410;
+      --green-mid:  #2EAA6E;
+      --green-tint: #1A3526;
+      --amber:      #FCD34D;
+      --amber-bg:   #1C1400;
+      --amber-border:#78500A;
+    }
+  }
+
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    min-height: 100vh;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  /* ── Header ── */
+  header {
+    background: var(--surface);
+    border-bottom: 1px solid var(--border);
+    padding: 0 24px;
+  }
+  .header-inner {
+    max-width: 680px;
+    margin: 0 auto;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  .logo-mark {
+    width: 34px;
+    height: 34px;
+    border-radius: 9px;
+    background: #12281E;
+    overflow: hidden;
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 6px;
+  }
+  .logo-mark img { width: 100%; height: 100%; object-fit: contain; }
+  .logo-mark svg { width: 100%; height: 100%; }
+  .logo-name {
+    font-size: 16px;
+    font-weight: 700;
+    letter-spacing: -0.3px;
+    color: var(--text);
+  }
+  .logo-name span { color: var(--green); }
+
+  /* ── Main layout ── */
+  main {
+    max-width: 680px;
+    margin: 0 auto;
+    padding: 36px 20px 60px;
+  }
+
+  /* ── Hero ── */
+  .hero {
+    margin-bottom: 32px;
+  }
+  .hero h1 {
+    font-size: 26px;
+    font-weight: 700;
+    letter-spacing: -0.5px;
+    line-height: 1.2;
+    margin-bottom: 8px;
+  }
+  .hero-meta {
+    font-size: 13px;
+    color: var(--text-3);
+  }
+
+  /* ── Cards ── */
+  .card {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-lg);
+    overflow: hidden;
+    margin-bottom: 16px;
+  }
+  .card-header {
+    padding: 18px 22px 14px;
+    border-bottom: 1px solid var(--border);
+    display: flex;
+    align-items: center;
+    gap: 12px;
+  }
+  .card-header-icon {
+    width: 36px;
+    height: 36px;
+    border-radius: 10px;
+    background: var(--green-tint);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+  }
+  .card-header-icon svg {
+    width: 18px;
+    height: 18px;
+    stroke: var(--green);
+    fill: none;
+    stroke-width: 2;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+  }
+  .card-header h2 {
+    font-size: 15px;
+    font-weight: 600;
+    letter-spacing: -0.2px;
+  }
+  .card-body {
+    padding: 18px 22px 20px;
+  }
+  .card-body p {
+    font-size: 14px;
+    color: var(--text-2);
+    line-height: 1.7;
+    margin-bottom: 12px;
+  }
+  .card-body p:last-child { margin-bottom: 0; }
+
+  /* ── Data table ── */
+  .data-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 13.5px;
+  }
+  .data-table th {
+    text-align: left;
+    padding: 10px 14px;
+    background: var(--surface-2);
+    color: var(--text-3);
+    font-size: 11px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    border-bottom: 1px solid var(--border);
+  }
+  .data-table td {
+    padding: 11px 14px;
+    color: var(--text-2);
+    border-bottom: 1px solid var(--border);
+    line-height: 1.5;
+    vertical-align: top;
+  }
+  .data-table tr:last-child td { border-bottom: none; }
+  .data-table td:first-child {
+    color: var(--text);
+    font-weight: 500;
+    white-space: nowrap;
+  }
+
+  /* ── Service list ── */
+  .service-list {
+    list-style: none;
+    padding: 0;
+  }
+  .service-list li {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    padding: 10px 0;
+    border-bottom: 1px solid var(--border);
+    font-size: 14px;
+    color: var(--text-2);
+    line-height: 1.5;
+  }
+  .service-list li:last-child { border-bottom: none; }
+  .service-dot {
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: var(--green);
+    flex-shrink: 0;
+    margin-top: 6px;
+  }
+  .service-list strong { color: var(--text); font-weight: 600; }
+
+  /* ── Rights list ── */
+  .rights-list {
+    list-style: none;
+    padding: 0;
+  }
+  .rights-list li {
+    display: flex;
+    gap: 12px;
+    padding: 10px 0;
+    border-bottom: 1px solid var(--border);
+    font-size: 14px;
+    color: var(--text-2);
+    line-height: 1.5;
+    align-items: flex-start;
+  }
+  .rights-list li:last-child { border-bottom: none; }
+  .rights-check {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: var(--green-tint);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    margin-top: 1px;
+  }
+  .rights-check svg {
+    width: 11px;
+    height: 11px;
+    stroke: var(--green);
+    fill: none;
+    stroke-width: 2.5;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+  }
+  @media (prefers-color-scheme: dark) {
+    .rights-check svg { stroke: var(--green); }
+  }
+  .rights-list strong { color: var(--text); font-weight: 600; }
+
+  /* ── Deletion steps ── */
+  .steps {
+    list-style: none;
+    counter-reset: steps;
+    padding: 4px 22px 18px;
+  }
+  .steps li {
+    counter-increment: steps;
+    display: flex;
+    align-items: flex-start;
+    gap: 14px;
+    padding: 13px 0;
+    border-bottom: 1px solid var(--border);
+    font-size: 14px;
+    line-height: 1.6;
+    color: var(--text-2);
+  }
+  .steps li:last-child { border-bottom: none; }
+  .steps li::before {
+    content: counter(steps);
+    min-width: 26px;
+    height: 26px;
+    background: var(--green-tint);
+    color: var(--green-mid);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 12px;
+    font-weight: 700;
+    flex-shrink: 0;
+    margin-top: 1px;
+  }
+  @media (prefers-color-scheme: dark) {
+    .steps li::before { color: var(--green); }
+  }
+  .steps li strong { color: var(--text); font-weight: 600; }
+
+  /* ── Divider ── */
+  .divider {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    margin: 4px 22px 0;
+  }
+  .divider::before, .divider::after {
+    content: '';
+    flex: 1;
+    height: 1px;
+    background: var(--border);
+  }
+  .divider span {
+    font-size: 12px;
+    color: var(--text-3);
+    font-weight: 500;
+    letter-spacing: 0.3px;
+  }
+
+  /* ── Email fallback ── */
+  .email-section {
+    padding: 16px 22px 20px;
+  }
+  .email-section p {
+    font-size: 13.5px;
+    color: var(--text-2);
+    line-height: 1.65;
+    margin-bottom: 14px;
+  }
+  .mail-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background: var(--green-tint);
+    color: var(--green-mid);
+    border: 1px solid var(--green);
+    border-radius: var(--radius-sm);
+    padding: 9px 16px;
+    font-size: 13.5px;
+    font-weight: 600;
+    text-decoration: none;
+    margin-bottom: 10px;
+  }
+  @media (prefers-color-scheme: dark) {
+    .mail-btn { color: var(--green); }
+  }
+  .email-note {
+    font-size: 12px;
+    color: var(--text-3);
+    line-height: 1.6;
+  }
+
+  /* ── Contact card ── */
+  .contact-row {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 14px 22px;
+  }
+  .contact-icon {
+    width: 36px;
+    height: 36px;
+    border-radius: 10px;
+    background: var(--green-tint);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+  }
+  .contact-icon svg {
+    width: 17px;
+    height: 17px;
+    stroke: var(--green);
+    fill: none;
+    stroke-width: 2;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+  }
+  .contact-detail {
+    font-size: 14px;
+    color: var(--text-2);
+    line-height: 1.4;
+  }
+  .contact-detail a {
+    color: var(--green);
+    text-decoration: none;
+    font-weight: 600;
+  }
+
+  /* ── Links ── */
+  a { color: var(--green); }
+
+  /* ── Footer ── */
+  footer {
+    text-align: center;
+    font-size: 12px;
+    color: var(--text-3);
+    padding: 0 20px 40px;
+    line-height: 1.8;
+  }
+  footer a { color: var(--text-3); text-decoration: underline; }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="header-inner">
+    <div class="logo-mark">
+      <!-- gleiche Base64-Grafik wie in privacy-policy.html -->
+      <img src="data:image/png;base64,..." alt="">
+    </div>
+    <span class="logo-name">Ivy <span>Spaces</span></span>
+  </div>
+</header>
+
+<main>
+
+<div class="hero">
+    <h1>Terms of Service</h1>
+    <p class="hero-meta">
+        Last updated: July 2026 &nbsp;·&nbsp;
+        Developer: Dominik Mryka
+    </p>
+</div>
+
+<!-- ======================================================= -->
+<!-- 1 -->
+<!-- ======================================================= -->
+
+<div class="card">
+
+<div class="card-header">
+
+<div class="card-header-icon">
+<svg viewBox="0 0 24 24">
+<path d="M12 2L4 6v6c0 5 3.5 9.5 8 10 4.5-.5 8-5 8-10V6z"/>
+<path d="M9 12l2 2 4-4"/>
+</svg>
+</div>
+
+<h2>1. Acceptance of These Terms</h2>
+
+</div>
+
+<div class="card-body">
+
+<p>
+Welcome to <strong>Ivy Spaces</strong>.
+These Terms of Service govern your use of the application and any related
+services provided by Ivy Spaces.
+</p>
+
+<p>
+By downloading, installing or using the app, you agree to be bound by these
+Terms. If you do not agree with these Terms, please do not use the Service.
+</p>
+
+<p>
+You must also comply with all applicable laws and the terms of the platform
+through which you downloaded the app, including Google Play or the Apple App
+Store.
+</p>
+
+</div>
+
+</div>
+
+<!-- ======================================================= -->
+<!-- 2 -->
+<!-- ======================================================= -->
+
+<div class="card">
+
+<div class="card-header">
+
+<div class="card-header-icon">
+<svg viewBox="0 0 24 24">
+<circle cx="12" cy="8" r="4"/>
+<path d="M4 20c0-4 3.5-7 8-7s8 3 8 7"/>
+</svg>
+</div>
+
+<h2>2. Accounts</h2>
+
+</div>
+
+<div class="card-body">
+
+<p>
+Some features require an Ivy Spaces account. You are responsible for keeping
+your login credentials secure and for all activities performed through your
+account.
+</p>
+
+<p>
+You agree to provide accurate information when creating your account and to
+keep this information up to date.
+</p>
+
+<p>
+If you believe your account has been accessed without authorization, you should
+change your password immediately and contact us.
+</p>
+
+</div>
+
+</div>
+
+<!-- ======================================================= -->
+<!-- 3 -->
+<!-- ======================================================= -->
+
+<div class="card">
+
+<div class="card-header">
+
+<div class="card-header-icon">
+<svg viewBox="0 0 24 24">
+<path d="M4 5h16"/>
+<path d="M4 12h16"/>
+<path d="M4 19h16"/>
+</svg>
+</div>
+
+<h2>3. Using Ivy Spaces</h2>
+
+</div>
+
+<div class="card-body">
+
+<p>
+Ivy Spaces is designed for creating private notes, shared workspaces,
+collaborative planning and synchronized content across supported devices.
+</p>
+
+<p>
+Private notes are stored locally on your device. Shared workspaces and
+collaborative content are synchronized using Google Firebase.
+</p>
+
+<p>
+You agree not to misuse the Service. This includes attempting to disrupt the
+service, interfere with other users, upload illegal content, reverse engineer
+the application, or use automated systems to abuse the platform.
+</p>
+
+<p>
+We may suspend or terminate access if these Terms are violated.
+</p>
+
+</div>
+
+</div>
+
+  <!-- ======================================================= -->
+<!-- 4 -->
+<!-- ======================================================= -->
+
+<div class="card">
+
+<div class="card-header">
+
+<div class="card-header-icon">
+<svg viewBox="0 0 24 24">
+<path d="M12 2l3 6 6 .8-4.5 4.4 1.1 6.3L12 17l-5.6 2.5 1.1-6.3L3 8.8 9 8z"/>
+</svg>
+</div>
+
+<h2>4. Your Content</h2>
+
+</div>
+
+<div class="card-body">
+
+<p>
+You retain ownership of all notes, files and other content you create using Ivy Spaces.
+</p>
+
+<p>
+By using the Service, you grant Ivy Spaces only the limited rights necessary to
+store, synchronize, process and display your content for the purpose of
+providing the app's functionality.
+</p>
+
+<p>
+We do not claim ownership of your content and do not use it for advertising or
+sell it to third parties.
+</p>
+
+<p>
+You are solely responsible for the content you create, share and store through
+the Service.
+</p>
+
+</div>
+
+</div>
+
+<!-- ======================================================= -->
+<!-- 5 -->
+<!-- ======================================================= -->
+
+<div class="card">
+
+<div class="card-header">
+
+<div class="card-header-icon">
+<svg viewBox="0 0 24 24">
+<rect x="3" y="5" width="18" height="14" rx="2"/>
+<path d="M3 10h18"/>
+</svg>
+</div>
+
+<h2>5. Premium Subscriptions</h2>
+
+</div>
+
+<div class="card-body">
+
+<p>
+Some features of Ivy Spaces require an active Premium subscription.
+Subscriptions are managed through Google Play or the Apple App Store using
+RevenueCat.
+</p>
+
+<p>
+Subscriptions automatically renew unless cancelled before the end of the current
+billing period.
+</p>
+
+<p>
+You can manage or cancel your subscription at any time through your Google Play
+or Apple account settings.
+</p>
+
+<p>
+Refunds are handled solely by Google or Apple according to their respective
+policies. Ivy Spaces cannot issue refunds directly.
+</p>
+
+<p>
+If your subscription expires, Premium features may become unavailable while your
+existing content remains accessible unless otherwise stated.
+</p>
+
+</div>
+
+</div>
+
+<!-- ======================================================= -->
+<!-- 6 -->
+<!-- ======================================================= -->
+
+<div class="card">
+
+<div class="card-header">
+
+<div class="card-header-icon">
+<svg viewBox="0 0 24 24">
+<path d="M12 2v5"/>
+<path d="M12 17v5"/>
+<path d="M2 12h5"/>
+<path d="M17 12h5"/>
+<circle cx="12" cy="12" r="3"/>
+</svg>
+</div>
+
+<h2>6. Availability of the Service</h2>
+
+</div>
+
+<div class="card-body">
+
+<p>
+We strive to provide a reliable and secure service. However, Ivy Spaces is
+provided on an "as available" basis and uninterrupted availability cannot be
+guaranteed.
+</p>
+
+<p>
+Maintenance, software updates, internet connectivity, cloud infrastructure or
+third-party services may temporarily affect availability.
+</p>
+
+<p>
+We reserve the right to modify, improve or discontinue features at any time if
+necessary to maintain or improve the Service.
+</p>
+
+</div>
+
+</div>
+
+<!-- ======================================================= -->
+<!-- 7 -->
+<!-- ======================================================= -->
+
+<div class="card">
+
+<div class="card-header">
+
+<div class="card-header-icon">
+<svg viewBox="0 0 24 24">
+<path d="M6 3h12"/>
+<path d="M8 3v4"/>
+<path d="M16 3v4"/>
+<rect x="4" y="7" width="16" height="14" rx="2"/>
+</svg>
+</div>
+
+<h2>7. Intellectual Property</h2>
+
+</div>
+
+<div class="card-body">
+
+<p>
+The Ivy Spaces application, including its design, branding, graphics, user
+interface, logos, source code and other intellectual property, is owned by the
+developer unless otherwise stated.
+</p>
+
+<p>
+These Terms do not grant you ownership of the application or any of its
+intellectual property.
+</p>
+
+<p>
+You may not copy, modify, distribute, reverse engineer or create derivative
+works from the Service except where permitted by applicable law.
+</p>
+
+</div>
+
+</div>
+<!-- ======================================================= -->
+<!-- 8 -->
+<!-- ======================================================= -->
+
+<div class="card">
+
+<div class="card-header">
+
+<div class="card-header-icon">
+<svg viewBox="0 0 24 24">
+<path d="M12 2L4 6v6c0 5 3.5 9.5 8 10 4.5-.5 8-5 8-10V6z"/>
+<path d="M9 12l2 2 4-4"/>
+</svg>
+</div>
+
+<h2>8. Privacy</h2>
+
+</div>
+
+<div class="card-body">
+
+<p>
+Your privacy is important to us. The collection and processing of personal data
+is governed by our Privacy Policy.
+</p>
+
+<p>
+By using Ivy Spaces, you acknowledge that your data may be processed as
+described in the Privacy Policy, including the use of Firebase services,
+RevenueCat and other infrastructure providers required to operate the app.
+</p>
+
+<p>
+Private notes remain stored locally on your device unless you choose to use
+features that synchronize shared content through the cloud.
+</p>
+
+</div>
+
+</div>
+
+<!-- ======================================================= -->
+<!-- 9 -->
+<!-- ======================================================= -->
+
+<div class="card">
+
+<div class="card-header">
+
+<div class="card-header-icon">
+<svg viewBox="0 0 24 24">
+<path d="M6 3h12"/>
+<path d="M6 7h12"/>
+<path d="M6 11h12"/>
+<path d="M6 15h8"/>
+</svg>
+</div>
+
+<h2>9. Suspension and Termination</h2>
+
+</div>
+
+<div class="card-body">
+
+<p>
+You may stop using Ivy Spaces at any time and delete your account through the
+app.
+</p>
+
+<p>
+We may suspend or terminate access to the Service if these Terms are violated,
+if illegal activities are detected, or if continued access could harm the
+Service or other users.
+</p>
+
+<p>
+Termination does not affect any legal rights or obligations that arose before
+termination.
+</p>
+
+</div>
+
+</div>
+
+<!-- ======================================================= -->
+<!-- 10 -->
+<!-- ======================================================= -->
+
+<div class="card">
+
+<div class="card-header">
+
+<div class="card-header-icon">
+<svg viewBox="0 0 24 24">
+<path d="M12 9v4"/>
+<circle cx="12" cy="17" r="1"/>
+<path d="M12 2L2 20h20L12 2z"/>
+</svg>
+</div>
+
+<h2>10. Disclaimer of Warranties</h2>
+
+</div>
+
+<div class="card-body">
+
+<p>
+Ivy Spaces is provided on an "as is" and "as available" basis.
+</p>
+
+<p>
+To the maximum extent permitted by law, we make no warranties regarding
+availability, reliability, accuracy or fitness for a particular purpose.
+</p>
+
+<p>
+While we continuously work to improve the app, we cannot guarantee that it will
+always be free of bugs, interruptions or security vulnerabilities.
+</p>
+
+</div>
+
+</div>
+
+<!-- ======================================================= -->
+<!-- 11 -->
+<!-- ======================================================= -->
+
+<div class="card">
+
+<div class="card-header">
+
+<div class="card-header-icon">
+<svg viewBox="0 0 24 24">
+<circle cx="12" cy="12" r="9"/>
+<path d="M12 7v5"/>
+<path d="M12 16h.01"/>
+</svg>
+</div>
+
+<h2>11. Limitation of Liability</h2>
+
+</div>
+
+<div class="card-body">
+
+<p>
+To the fullest extent permitted by applicable law, Ivy Spaces and its developer
+shall not be liable for indirect, incidental, special or consequential damages,
+including loss of data, loss of profits or business interruption arising from
+the use of the Service.
+</p>
+
+<p>
+Nothing in these Terms excludes liability where such exclusion is prohibited by
+law.
+</p>
+
+</div>
+
+</div>
+
+<!-- ======================================================= -->
+<!-- 12 -->
+<!-- ======================================================= -->
+
+<div class="card">
+
+<div class="card-header">
+
+<div class="card-header-icon">
+<svg viewBox="0 0 24 24">
+<path d="M4 6h16"/>
+<path d="M4 12h16"/>
+<path d="M4 18h10"/>
+</svg>
+</div>
+
+<h2>12. Changes to These Terms</h2>
+
+</div>
+
+<div class="card-body">
+
+<p>
+We may update these Terms of Service from time to time to reflect changes in the
+app, legal requirements or operational needs.
+</p>
+
+<p>
+The latest version will always be available on this page together with the
+updated revision date.
+</p>
+
+<p>
+Continued use of Ivy Spaces after changes become effective constitutes
+acceptance of the revised Terms.
+</p>
+
+</div>
+
+</div>
+
+<!-- ======================================================= -->
+<!-- 13 -->
+<!-- ======================================================= -->
+
+<div class="card">
+
+<div class="card-header">
+
+<div class="card-header-icon">
+<svg viewBox="0 0 24 24">
+<path d="M4 4h16v16H4z"/>
+<path d="M4 7l8 6 8-6"/>
+</svg>
+</div>
+
+<h2>13. Contact</h2>
+
+</div>
+
+<div class="contact-row">
+
+<div class="contact-icon">
+
+<svg viewBox="0 0 24 24">
+<path d="M4 4h16v16H4z"/>
+<path d="M4 7l8 6 8-6"/>
+</svg>
+
+</div>
+
+<div class="contact-detail">
+
+Questions regarding these Terms?
+
+<br><br>
+
+<a href="mailto:ivysharednotesapp@gmail.com">
+ivysharednotesapp@gmail.com
+</a>
+
+</div>
+
+</div>
+
+</div>
+
+</main>
+
+<footer>
+
+<p>
+© 2026 Ivy Spaces
+</p>
+
+<p>
+
+<a href="privacy-policy.html">
+Privacy Policy
+</a>
+
+&nbsp;·&nbsp;
+
+<a href="delete-account.html">
+Delete Account
+</a>
+
+</p>
+
+</footer>
+
+</body>
+</html>
