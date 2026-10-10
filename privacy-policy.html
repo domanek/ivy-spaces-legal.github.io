@@ -418,7 +418,7 @@
 
   <div class="hero">
     <h1>Privacy Policy</h1>
-    <p class="hero-meta">Last updated: June 2026 &nbsp;·&nbsp; Developer: Dominik Mryka</p>
+    <p class="hero-meta">Last updated: August 2026 &nbsp;·&nbsp; Developer: Dominik Mryka</p>
   </div>
 
   <!-- 1. Information We Collect -->
@@ -442,12 +442,16 @@
           <td>Account registration and login</td>
         </tr>
         <tr>
+          <td>Google account (if you use Google Sign-In)</td>
+          <td>Account registration and login via your Google profile</td>
+        </tr>
+        <tr>
           <td>Display name</td>
           <td>Shown within shared workspaces</td>
         </tr>
         <tr>
           <td>Note content</td>
-          <td>Core functionality of the app</td>
+          <td>Core functionality of the app. Private notes stay on your device; with the optional Pro/Team cloud backup they are also stored in your account</td>
         </tr>
         <tr>
           <td>Device token (FCM)</td>
@@ -506,39 +510,68 @@
     </div>
   </div>
 
-  <!-- 3. Legal Basis -->
+  <!-- 3. International Data Transfers -->
+  <div class="card">
+    <div class="card-header">
+      <div class="card-header-icon">
+        <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.5 2.6 3.8 5.6 3.8 9s-1.3 6.4-3.8 9c-2.5-2.6-3.8-5.6-3.8-9s1.3-6.4 3.8-9z"/></svg>
+      </div>
+      <h2>3. International Data Transfers</h2>
+    </div>
+    <div class="card-body">
+      <p>Your data is stored in the European Union (see above). However, some of our processors — including <strong>Google</strong> and <strong>RevenueCat, Inc.</strong> — are organized in the United States and may process limited data (such as purchase records or crash diagnostics) outside the EU/EEA.</p>
+      <p>Where data is transferred outside the EU/EEA, it is protected by appropriate safeguards, in particular the European Commission's <strong>Standard Contractual Clauses</strong> and each provider's applicable data-processing terms.</p>
+    </div>
+  </div>
+
+  <!-- 4. Legal Basis -->
   <div class="card">
     <div class="card-header">
       <div class="card-header-icon">
         <svg viewBox="0 0 24 24"><path d="M12 2L3 7v5c0 5.25 3.75 10.15 9 11.35C17.25 22.15 21 17.25 21 12V7L12 2z"/></svg>
       </div>
-      <h2>3. Legal Basis</h2>
+      <h2>4. Legal Basis</h2>
     </div>
     <div class="card-body">
       <p>Data is processed based on your consent through use of the app (Art. 6(1)(a) GDPR) and for the performance of our service agreement (Art. 6(1)(b) GDPR).</p>
     </div>
   </div>
 
-  <!-- 4. Data Sharing -->
+  <!-- 5. Data Sharing -->
   <div class="card">
     <div class="card-header">
       <div class="card-header-icon">
         <svg viewBox="0 0 24 24"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="M8.59 13.51l6.83 3.98M15.41 6.51l-6.82 3.98"/></svg>
       </div>
-      <h2>4. Data Sharing</h2>
+      <h2>5. Data Sharing</h2>
     </div>
     <div class="card-body">
       <p>We do <strong>not</strong> sell your data. Data is only shared with the infrastructure providers listed above (Google, RevenueCat) solely for the purpose of operating the app.</p>
+      <p><strong>Shared spaces:</strong> when you create or join a shared space, the notes in that space, your display name, your live editing activity (presence), and any task assignments are visible to the other members of that space. Only invite people you trust.</p>
     </div>
   </div>
 
-  <!-- 5. Your Rights -->
+  <!-- 6. Data Retention -->
+  <div class="card">
+    <div class="card-header">
+      <div class="card-header-icon">
+        <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>
+      </div>
+      <h2>6. Data Retention</h2>
+    </div>
+    <div class="card-body">
+      <p>We keep your data only as long as needed to provide the app. When you delete your account, your profile, private notes (including their cloud backup), devices and Space memberships are removed <strong>immediately</strong>. Notes you wrote in shared Spaces remain with the other members; a Space you owned passes to another member, or is deleted if no one else is left.</p>
+      <p>Notes you delete in a shared space are moved to that space's trash and permanently deleted after <strong>30 days</strong>. Purchase records may be retained by Google and RevenueCat for as long as required by their accounting and tax obligations.</p>
+    </div>
+  </div>
+
+  <!-- 7. Your Rights -->
   <div class="card">
     <div class="card-header">
       <div class="card-header-icon">
         <svg viewBox="0 0 24 24"><polyline points="9 11 12 14 22 4"/><path d="M21 12v7a2 2 0 01-2 2H5a2 2 0 01-2-2V5a2 2 0 012-2h11"/></svg>
       </div>
-      <h2>5. Your Rights</h2>
+      <h2>7. Your Rights</h2>
     </div>
     <ul class="rights-list" style="padding: 6px 22px 16px;">
       <li>
@@ -557,26 +590,38 @@
         <span class="rights-check"><svg viewBox="0 0 12 12"><polyline points="2 6 5 9 10 3"/></svg></span>
         <span><strong>Object</strong> to data processing</span>
       </li>
+      <li>
+        <span class="rights-check"><svg viewBox="0 0 12 12"><polyline points="2 6 5 9 10 3"/></svg></span>
+        <span><strong>Port</strong> your data — receive it in a portable, machine-readable format</span>
+      </li>
+      <li>
+        <span class="rights-check"><svg viewBox="0 0 12 12"><polyline points="2 6 5 9 10 3"/></svg></span>
+        <span><strong>Restrict</strong> processing, and <strong>withdraw consent</strong> at any time</span>
+      </li>
+      <li>
+        <span class="rights-check"><svg viewBox="0 0 12 12"><polyline points="2 6 5 9 10 3"/></svg></span>
+        <span><strong>Complain</strong> to a data protection authority (in Germany, your state's Datenschutzbehörde)</span>
+      </li>
     </ul>
   </div>
 
-  <!-- 6. Account Deletion -->
+  <!-- 8. Account Deletion -->
   <div class="card">
     <div class="card-header">
       <div class="card-header-icon">
         <svg viewBox="0 0 24 24"><polyline points="3 6 5 6 21 6"/><path d="M19 6l-1 14a2 2 0 01-2 2H8a2 2 0 01-2-2L5 6"/><path d="M10 11v6M14 11v6"/><path d="M9 6V4h6v2"/></svg>
       </div>
-      <h2>6. Account Deletion</h2>
+      <h2>8. Account Deletion</h2>
     </div>
 
     <!-- In-app deletion (primary) -->
     <div class="card-body" style="padding-bottom: 4px;">
-      <p>You can delete your account directly from the app. All your data — private notes, workspace memberships, and profile — is removed <strong>immediately and permanently</strong>.</p>
+      <p>You can delete your account directly from the app. Your profile, private notes and Space memberships are removed <strong>immediately and permanently</strong>. <strong>Deleting your account does not cancel an active subscription.</strong> Cancel it first in Google Play → Payments &amp; subscriptions.</p>
     </div>
     <ol class="steps">
       <li>Open <strong>Ivy Spaces</strong> on your device and sign in.</li>
       <li>Go to <strong>Settings → Account → Delete Account</strong>.</li>
-      <li>Tap <strong>Delete permanently</strong>. Your account and all data are removed immediately.</li>
+      <li>Tap <strong>Delete permanently</strong>. Your account and personal data are removed immediately.</li>
     </ol>
 
     <div class="divider"><span>or</span></div>
@@ -591,13 +636,13 @@
     </div>
   </div>
 
-  <!-- 7. Contact -->
+  <!-- 9. Contact -->
   <div class="card">
     <div class="card-header">
       <div class="card-header-icon">
         <svg viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
       </div>
-      <h2>7. Contact</h2>
+      <h2>9. Contact</h2>
     </div>
     <div class="contact-row">
       <div class="contact-icon">
@@ -610,6 +655,32 @@
     </div>
   </div>
 
+  <!-- 10. Provider & Imprint (Impressum) -->
+  <div class="card" id="impressum">
+    <div class="card-header">
+      <div class="card-header-icon">
+        <svg viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M3 9h18M8 4v5"/></svg>
+      </div>
+      <h2>10. Provider &amp; Imprint (Impressum)</h2>
+    </div>
+    <div class="card-body">
+      <p>Information pursuant to § 5 DDG (German Digital Services Act) and the party responsible for data processing under the GDPR:</p>
+      <!-- TODO (Dominik): replace the bracketed placeholders with your real,
+           serviceable address. A plain P.O. box (Postfach) does NOT satisfy the
+           German "ladungsfähige Anschrift" requirement. To keep your home
+           address private, you may use a c/o "Impressum service" address (fill
+           the "c/o" line). Have a lawyer confirm before publishing. -->
+      <p>
+        <strong>[Your name or company]</strong><br>
+        [c/o Impressum service — optional]<br>
+        [Street and house number]<br>
+        [Postal code] [City], Germany<br>
+        Email: <a href="mailto:ivysharednotesapp@gmail.com">ivysharednotesapp@gmail.com</a>
+      </p>
+      <p>Controller under Art. 4(7) GDPR / responsible for content: <strong>[Your name]</strong>.</p>
+    </div>
+  </div>
+
 </main>
 
 <footer>
@@ -617,6 +688,8 @@
   <a href="account-deletion.html">Account Deletion</a>
   &nbsp;·&nbsp;
   <a href="terms-of-service.html">Terms of Service</a>
+  &nbsp;·&nbsp;
+  <a href="#impressum">Imprint</a>
   <br>
   This policy applies to the Android application "Ivy Spaces" (com.domanek.ivy_shared_notes).
 </footer>

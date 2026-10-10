@@ -6,7 +6,7 @@ Official legal documents for **Ivy Spaces**, a collaborative note-taking app for
 
 - 📄 [Privacy Policy](privacy-policy.html)
 - 📜 [Terms of Service](terms-of-service.html)
-- 🗑️ [Account Deletion](delete-account.html)
+- 🗑️ [Account Deletion](account-deletion.html)
 
 ## About Ivy Spaces
 
